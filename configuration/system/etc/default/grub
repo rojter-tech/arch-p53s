@@ -1,6 +1,6 @@
 # GRUB boot loader configuration #
 
-GRUB_DEFAULT='Advanced options for Arch Linux>Arch Linux, with Linux linux-surface'
+GRUB_DEFAULT='Advanced options for Arch Linux>Arch Linux, with Linux linux'
 GRUB_TIMEOUT=1
 GRUB_DISTRIBUTOR="Arch"
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3"
