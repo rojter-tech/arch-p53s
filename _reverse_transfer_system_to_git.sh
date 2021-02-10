@@ -12,6 +12,8 @@ mkdir -p $GIT_USER_HOME/.config/polybar; mkdir -p ~/.config/polybar; \
   rsync -av ~/.config/polybar/* $GIT_USER_HOME/.config/polybar/
 mkdir -p $GIT_USER_HOME/.config/systemd; mkdir -p ~/.config/systemd; \
   rsync -av ~/.config/systemd/* $GIT_USER_HOME/.config/systemd/
+mkdir -p $GIT_USER_HOME/.config/autostart; mkdir -p ~/.config/autostart; \
+  rsync -av ~/.config/autostart/* $GIT_USER_HOME/.config/autostart/
 # Files
 touch ~/.Xresources; touch $GIT_USER_HOME/.Xresources
 touch ~/.xinitrc; touch $GIT_USER_HOME/.xinitrc
