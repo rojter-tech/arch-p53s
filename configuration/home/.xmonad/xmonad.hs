@@ -1,5 +1,6 @@
 import System.IO
 import System.Exit
+
 import XMonad
 import XMonad.Config.Desktop
 import XMonad.Util.Run(spawnPipe)
