@@ -57,8 +57,8 @@ grep '"no"' /usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf
 
 ## From here on it depends on taste and preferences for the day
 
-# GNOME and GDM
-sudo pacman -S gnome gnome-extra gnome-shell gdm --noconfirm --needed
+# GNOME and GDM and lightdm
+sudo pacman -S gnome gnome-extra gnome-shell gdm lightdm lightdm-deepin-greeter lightdm-gtk-greeter --noconfirm --needed
 sudo systemctl enable gdm.service
 yay -S gnome-shell-extensions gnome-shell-extension-dash-to-dock \
   --answerclean N --answeredit N --noconfirm --needed
