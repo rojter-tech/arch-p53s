@@ -19,6 +19,7 @@ sudo mkdir -p /usr/share/backgrounds/arch; sudo rsync -rv $GIT_SYSTEM/usr/share/
 sudo mkdir -p /etc/default; sudo rsync -v $GIT_SYSTEM/etc/default/grub /etc/default/grub
 sudo mkdir -p /etc/X11/xorg.conf.d; sudo rsync -v $GIT_SYSTEM/etc/X11/xorg.conf.d/* /etc/X11/xorg.conf.d/
 sudo mkdir -p /etc/X11; sudo rsync -v $GIT_SYSTEM/etc/X11/xorg.conf /etc/X11/xorg.conf
+sudo mkdir -p /etc/lightdm; sudo rsync -v $GIT_SYSTEM/etc/lightdm/* /etc/lightdm/
 
 # home dirs
 #mkdir -p ~/.screenlayout; rsync -av $GIT_USER_HOME/.screenlayout/* ~/.screenlayout/
@@ -29,5 +30,5 @@ sudo mkdir -p /etc/X11; sudo rsync -v $GIT_SYSTEM/etc/X11/xorg.conf /etc/X11/xor
 #sudo mkdir -p /etc/X11; sudo rsync -v $GIT_SYSTEM/etc/X11/xorg.conf /etc/X11/xorg.conf
 #
 #sudo mkdir -p /etc/profile.d; sudo rsync -v $GIT_SYSTEM/etc/profile.d/hidpi.sh /etc/profile.d/hidpi.sh
-#sudo mkdir -p /etc/lightdm; sudo rsync -v $GIT_SYSTEM/etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+#
 #/usr sub
