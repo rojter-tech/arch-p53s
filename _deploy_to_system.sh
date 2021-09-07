@@ -17,9 +17,9 @@ sudo rsync -v $GIT_SYSTEM/etc/gdm/custom.conf /etc/gdm/custom.conf
 sudo rsync -v $GIT_USER_HOME/.config/i3/i3status.conf /etc/i3status.conf
 sudo mkdir -p /usr/share/backgrounds/arch; sudo rsync -rv $GIT_SYSTEM/usr/share/backgrounds/arch/* /usr/share/backgrounds/arch
 sudo mkdir -p /etc/default; sudo rsync -v $GIT_SYSTEM/etc/default/grub /etc/default/grub
-sudo mkdir -p /etc/X11/xorg.conf.d; sudo rsync -v $GIT_SYSTEM/etc/X11/xorg.conf.d/* /etc/X11/xorg.conf.d/
+sudo mkdir -p /etc/X11/xorg.conf.d; sudo rsync -vr $GIT_SYSTEM/etc/X11/xorg.conf.d/* /etc/X11/xorg.conf.d/
 sudo mkdir -p /etc/X11; sudo rsync -v $GIT_SYSTEM/etc/X11/xorg.conf /etc/X11/xorg.conf
-sudo mkdir -p /etc/lightdm; sudo rsync -v $GIT_SYSTEM/etc/lightdm/* /etc/lightdm/
+sudo mkdir -p /etc/lightdm; sudo rsync -vr $GIT_SYSTEM/etc/lightdm/* /etc/lightdm/
 
 # home dirs
 #mkdir -p ~/.screenlayout; rsync -av $GIT_USER_HOME/.screenlayout/* ~/.screenlayout/
